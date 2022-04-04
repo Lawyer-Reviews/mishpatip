@@ -1,0 +1,13 @@
+@@ -101,10 +101,10 @@ def add_pixel(x, y, color, pixel_priority):
+
+    config = toml.load(args.config)
+    ignore_colors = list(map(tuple, config["ignore_colors"]))
+    version = config["version"]
+    versions = config["versions"]
+
+    data = {
+        "version": version,
+        "versions": versions,
+        "structures": {},
+        "priorities": config["priorities"],
+    }
